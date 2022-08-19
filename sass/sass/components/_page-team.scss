@@ -1,0 +1,87 @@
+.team {
+    background-color: #f5f4fa;
+
+    &_title {
+        color: var(--text-color-black);
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 50px;
+      }
+
+      &_list {
+        display: flex;
+        justify-content: center;
+      }
+
+      &_social_media {
+        display: flex;
+        justify-content: center;
+      }
+
+      &_social_media_link {
+        color: #afb1b8;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        border-radius: 50%;
+        &:hover{color: var(--text-color-white);
+            background-color: #2196f3;}
+        &:focus{color: var(--text-color-white);
+                background-color: #2196f3;}
+      }
+
+      &_list_item {
+        background-color: #ffffff;
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
+        padding-bottom: 30px;
+      }
+
+      &_social_media_icon{
+        fill:currentColor;
+      }
+
+      &_member_image {
+        background-color: var(--bg-header-color);
+        width: 270px;
+        height: 260px;
+        margin-bottom: 30px;
+      }
+
+      &_member_name{
+        color: var(--text-color-black);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        margin: 0 0 10px 0;
+      }
+
+      &_job_title {
+        color: var(--phone-color);
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        margin: 0 0 15px 0;
+      }
+  }
+
+  
+  .team_social_media_list:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+ 
+  .team_list_item:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  
+  
+  
+ 

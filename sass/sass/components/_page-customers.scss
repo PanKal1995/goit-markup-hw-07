@@ -1,0 +1,42 @@
+
+  .customer{
+    padding: 94px 0;
+
+    &_title {
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 36px;
+      }
+
+      &_list {
+        display: flex;
+        justify-content: center;
+      }
+
+      &_link{
+    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 170px;
+    border-radius: 4px;
+    border: 1px solid #afb1b8;
+    color: #afb1b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    &:hover{color: #2196f3;
+        border-color: #2196f3;
+        cursor: pointer;}
+        &:focus{color: #2196f3;
+            border-color: #2196f3;
+            cursor: pointer;}
+  }
+
+    &_members_icon {
+    fill: currentColor;
+  }
+
+  }
+  
+  .customer_list_item:not(:last-child) {
+    margin-right: 30px;
+  }
