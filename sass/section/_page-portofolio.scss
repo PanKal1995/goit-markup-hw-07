@@ -1,0 +1,121 @@
+.portofolio__section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+  background-color:$header-color;
+}
+
+.portofolio {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portofolio__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portofolio__button {
+  color: $text-color;
+  background-color:$team-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  font-family: 'Roboto';
+  padding: 5px 25px;
+  transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover{ box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014, 0px 3px 1px 0px #0000001a;}
+  &:focus{ box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014, 0px 3px 1px 0px #0000001a;}
+}
+
+.portofolio__button-current {
+  color: $header-color;
+  background-color:$hover-color;
+}
+
+.portofolio__button:hover,
+.portofolio__button:focus {
+  color: $header-color;
+  background-color:$hover-color;
+}
+
+.picture {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+  text-decoration: none;
+}
+
+.picture__link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.picture__item {
+  background-color: #fff;
+  margin-top: 30px;
+  margin-left: 30px;
+  &:hover{box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f, 0px 1px 1px 0px #0000001f;}
+  &:focus{box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f, 0px 1px 1px 0px #0000001f;}
+}
+
+.picture__description{
+  position: absolute;
+  Width:370px;
+  Height:294px;
+  overflow: hidden;
+}
+
+.picture__details{
+  color: $header-color;
+  padding-top: 64px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 64px;
+  width: 320px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.picture__item:hover .picture__details{
+  transform: translatex(0);
+}
+
+.picture__details{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(33, 150, 243, 0.9);
+  transform: translatey(100%);
+  transition: transform 250ms ease;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.picture__content {
+  background-color: $header-color;
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.picture__title {
+  color: $text-color;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+}
+
+.picture__text {
+  color: $phone-color;
+  font-size: 16px;
+  line-height: 30px;
+}

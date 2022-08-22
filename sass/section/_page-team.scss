@@ -1,0 +1,77 @@
+.team__section {
+  background-color: $team-color;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    background-color:$header-color;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
+    padding-bottom: 30px;
+  }
+
+  &__image {
+    background-color:$header-color;
+    width: 270px;
+    height: 260px;
+    margin-bottom: 30px;
+  }
+
+  &__name{
+    color: $text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    margin: 0 0 10px 0;
+  }
+
+  &__title {
+    color:$phone-color;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    margin: 0 0 15px 0;
+  }
+}
+
+.team__social {
+  display: flex;
+  justify-content: center;
+}
+
+.team__social-list:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team__social-link {
+  color: #afb1b8;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50%;
+  &:hover{
+    color: $header-color;
+    background-color: $hover-color;
+  }
+
+  &:focus{
+    color: $header-color;
+    background-color:$hover-color;
+  }
+}
+
+.team__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+
+.team__social-icon{
+  fill:currentColor;
+}
